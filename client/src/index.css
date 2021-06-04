@@ -1,0 +1,73 @@
+
+
+body {
+  overflow-y: scroll;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+
+}
+
+
+.search, .input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
+  padding-top: 10em;
+
+}
+
+
+.search-appartment {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+footer {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.locations {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  column-count: 3;
+  column-gap: 10px;
+
+
+}
+
+header {
+  padding: 45px;
+  background-color: #8B0000;
+
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+
+}
+
+
+.link {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.result {
+  color: #282c34;
+}
