@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment} from "react";
 import Appartment from "./Appartment";
 
 
@@ -70,7 +70,6 @@ class SearchAppartment extends React.Component {
 
 
                 if (location.length === 9) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
                     let location3 = location[2];
@@ -81,15 +80,12 @@ class SearchAppartment extends React.Component {
                     let location8 = location[7];
                     let location9 = location[8];
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}/${location4}/${location5}/${location6}/${location7}/${location8}/${location9}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 8) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
                     let location3 = location[2];
@@ -100,9 +96,7 @@ class SearchAppartment extends React.Component {
                     let location8 = location[7];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}/${location4}/${location5}/${location6}/${location7}/${location8}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
@@ -118,15 +112,12 @@ class SearchAppartment extends React.Component {
                     let location7 = location[6];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}/${location4}/${location5}/${location6}/${location7}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 6) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
                     let location3 = location[2];
@@ -135,15 +126,12 @@ class SearchAppartment extends React.Component {
                     let location6 = location[5];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}/${location4}/${location5}/${location6}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 5) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
                     let location3 = location[2];
@@ -151,63 +139,49 @@ class SearchAppartment extends React.Component {
                     let location5 = location[4];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}/${location4}/${location5}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 4) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
                     let location3 = location[2];
                     let location4 = location[3];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}/${location4}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 3) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
                     let location3 = location[2];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}/${location3}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 2) {
-                    console.log(location)
                     let location1 = location[0];
                     let location2 = location[1];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}/${location2}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
 
                 if (location.length === 1) {
-                    console.log(location)
                     let location1 = location[0];
 
                     const response = await fetch(`http://localhost:8000/appartment/search/${location1}`);
-                    console.log("response", response)
                     const jsonData = await response.json();
-                    console.log("jsonData", jsonData)
                     this.setState({appartments: jsonData})
 
                 }
