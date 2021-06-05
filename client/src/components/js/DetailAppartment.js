@@ -29,7 +29,6 @@ const DetailAppartment = () => {
     const details = () => {
 
         for (let i in detail[0]) {
-            console.log(i)
             list.push(detail[0][i])
             delete list[0]
         }
